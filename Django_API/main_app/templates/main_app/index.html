@@ -1,3 +1,35 @@
-<img src="data:image/png;base64,{{graph1}}" />
+<div>
+    <h1>graph1</h1>
+    <img src="data:image/png;base64,{{graph1}}" />
+</div>
 
-<img src="data:image/png;base64,{{graph2}}" />
+<div>
+    <h1>graph2</h1>
+    <img src="data:image/png;base64,{{graph2}}" />
+</div>
+
+<div>
+    <h1>graph3</h1>
+    <img src="data:image/png;base64,{{graph3}}" />
+</div>
+
+<div>
+    <p>
+        <p>Parameters used : </p>
+        <p>bootstrap : {{bootstrap}}</p>
+        <p>max_depth : {{max_depth}}</p>
+        <p>max_features : {{max_features}}</p>
+        <p>min_samples_leaf : {{min_samples_leaf}}</p>
+        <p>min_samples_split : {{min_samples_split}}</p>
+        <p>n_estimators : {{n_estimators}}</p>
+    </p>
+    <p>
+       Accuracy Score :  {{accuracyScore}}
+    </p>
+    <p>
+        Confusion Matrix :   {{confusionMatrix | safe}}
+    </p>
+    <p>
+        Classification Report   {{classificationReport}}
+    </p>
+</div>
